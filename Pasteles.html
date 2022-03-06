@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria</title>
+    <style>
+        body{background-color:mediumslateblue;}
+    </style>
+</head>
+<body>
+    <background-color:blue></background-color:blue>
+    <img src="./pastel.jpg" width="50" height="60">
+    <form action="./Pedido.js">
+        <table>
+            <h3>Sabores</h3>
+            <tr>
+                <td>Piñon</td>
+                <th>250.00$</th>
+                <th><input type="checkbox" name="Piñon" id="Piñon"></th>
+            </tr>
+            <tr>
+                <td>Vainilla</td>
+                <th>150.00$</th>
+                <th><input type="checkbox" name="Vainilla" id="Vainilla"></th>
+            </tr>
+            <tr>
+                <td>Fresa</td>
+                <th>150.00$</th>
+                <th><input type="checkbox" name="Fresa" id="Fresa"></th>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <th>180.00$</th>
+                <th><input type="checkbox" name="Chocolate" id="Chocolate"></th>
+            </tr>
+        </table>
+        <table>
+            <h3>Adornos</h3>
+            <tr>
+                <td>Merengue</td>
+                <th>30.00$</th>
+                <th><input type="checkbox" name="Merengue" id="Merengue"></th>
+            </tr>
+            <tr>
+                <td>Chispas</td>
+                <th>10.00$</th>
+                <th><input type="checkbox" name="Chispas" id="Chispas"></th>
+            </tr>
+            <tr>
+                <td>Bombones</td>
+                <th>20.00$</th>
+                <th><input type="checkbox" name="Bombones" id="Bombones"></th>
+            </tr>
+            <tr>
+                <td>Crema batida</td>
+                <th>20.00$</th>
+                <th><input type="checkbox" name="Crema" id="Crema"></th>
+            </tr>
+        </table>
+        <h3>Pedido</h3>
+        <label for="nombre">Cuál es su nómbre?</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Nómbre"><br>
+            <label for="telefono">Cuál es su telefono?</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="Telefono"><br>
+            <label for="correo">Cuál es su correo electrónico?</label><br>
+            <input type="email" id="correo" name="correo" placeholder="Correo"><br>
+            <label for="canSab">Cuantos sabores quiere?(max. 4)</label><br>
+            <input type="number" id="canSab" name="canSab" value="1" max="4"><br>
+    <br><br>
+    <input type="submit"value="Pedir">
+    <a href="./Pedidos.html" target="blank"><input type="submit"value="Pedir"></a>
+    <input type="reset" value="Borrar">
+    <br><br>
+    </form>
+</body>
